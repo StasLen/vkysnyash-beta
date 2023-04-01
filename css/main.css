@@ -1,0 +1,82 @@
+@charset "utf-8";
+.main-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    min-width: calc(2 * var(--widthAside) + var(--minMainWidth));
+    background-color: var(--colorBgLighter);
+}
+.main-section__box{
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 80%;
+    min-width: var(--minMainWidth);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.main-section__filters,
+.main-section__ads{
+    color: var(--colorAccent);
+    text-shadow: 0 0 2px black;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    min-width: var(--widthAside);
+    background-color: var(--colorBgLight);
+    background: no-repeat url(../images/tekstura-doski-list-kofeinye-zerna.jpg);
+    background-size: cover;
+}
+.main-section__ads{
+    background-position: 100%;
+}
+.ingredients,
+.cooking-method{
+    list-style-type: none;
+}
+.ingredients li:hover,
+.cooking-method li:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.ingredients input,
+.cooking-method input{
+    cursor: pointer;
+}
+.dish-card{
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 0 .5rem var(--colorShadow);
+    background-color: var(--colorAccent);
+
+}
+.dish-card:hover{
+    box-shadow: 0 0 .5rem yellow;
+}
+.dish-card__figure img{
+    width: 100%;
+}
+.dish-card__figure figcaption{
+    padding: .5rem;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+}
+.dish-card__figure-name{
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+.dish-card__figure-time{
+    justify-self: right;
+}
+.people-likes{
+    place-self: center right;
+    display: flex;
+}
+.people-likes img{
+    width: 1.2rem;
+    margin-left: .5rem;
+}

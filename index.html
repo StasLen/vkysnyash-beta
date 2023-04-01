@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусняш</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="main-header">
+        <div>
+            <footer class="info">
+                <p>Контакты</p>
+                <p>
+                    Telegram: <a href="https://t.me/StasLen" target="_blank">@StasLen</a><br>
+                    VK: <a href="https://vk.com/staslenkevich" target="_blank">Stas Lenkevich</a>
+                </p>
+            </footer>
+            <div class="site-name-field">
+                <h1 class="main-header__name">ВКУ<span style="font-size: 9rem;">c</span>НЯШ</h1>
+                <form  action="" method="get" class="main-header__search-site">
+                    <input type="search" name="search-site" class="search-site" placeholder=" ПОИСК" required>
+                    <button><img class="search-icon" src="images/search-svgrepo-com.svg" alt="🔍"></button>
+                </form>
+            </div>
+            <div class="main-header__reg-buttons">
+                <button class="button">Регистрация</button>
+                <button class="button">Вход</button>
+            </div>
+        </div>
+        <div class="main-header__categories">
+            <ul class="categories">
+                <li>Категории</li>
+                <li>Сезоны</li>
+                <li>Для События</li>
+                <li>Кухни</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-section">
+        <aside class="main-section__filters">
+            <label for="ingredients">
+                <p>ИНГРИДИЕНТЫ</p>
+                <br>
+            </label>
+            <form id="ingredients" action="" method="get">
+                <ul class="ingredients">
+                    <li><input type="checkbox" name="salad" id="ing_salad"> Салат</li>
+                    <li><input type="checkbox" name="sausage" id="ing_sausage"> Колбаса</li>
+                    <li><input type="checkbox" name="egg" id="ing_egg"> Яйцо</li>
+                    <li><input type="checkbox" name="carrot" id="ing_carrot"> Морковь</li>
+                    <li><input type="checkbox" name="onion" id="ing_onion"> Лук</li>
+                </ul>
+                <br>
+                <button type="submit" class="button">ФИЛЬТР</button>
+            </form>
+            <br><br>
+            <label for="cooking-method">
+                <p>СПОСОБ<br>ПРИГОТОВЛЕНИЯ</p>
+                <br>
+            </label>
+            <form id="cooking-method" action="" method="get">
+                <ul class="cooking-method">
+                    <li><input type="checkbox" name="plate" id="cm_plate"> Плита</li>
+                    <li><input type="checkbox" name="barbecue" id="cm_barbecue"> Мангал</li>
+                    <li><input type="checkbox" name="stove" id="cm_stove"> Печь</li>
+                    <li><input type="checkbox" name="multicooker" id="cm_multicooker"> Мультиварка</li>
+                    <li><input type="checkbox" name="blender" id="cm_blender"> Блендер</li>
+                </ul>
+                <br>
+                <button type="submit" class="button">ФИЛЬТР</button>
+            </form>
+        </aside>
+        <section class="main-section__box">
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+            <article class="dish-card">
+                <figure class="dish-card__figure">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/e/emirati-food-in-dubai/fallback-image/emirati-food-in-dubai-emirati-fish-header.jpg?&cw=256&ch=256"
+                         alt="Вкусное блюдо">
+                    <figcaption>
+                        <h4 class="dish-card__figure-name">Вкусное блюдо</h4>
+                        <p class="dish-card__figure-time">45 мин</p>
+                        <p>2 комментария</p>
+                        <div class="people-likes">
+                            <p>5</p>
+                            <img src="images/heart-svgrepo-com.svg" alt="❤">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>            
+        </section>
+        <aside class="main-section__ads">
+            <!-- реклама -->
+        </aside>
+    </main>
+    <footer class="main-footer">
+        <div class="social">
+            <h3>Соцсети:</h3>
+            <a href="https://t.me/StasLen"><img src="images/telegram-svgrepo-com.svg" alt="Telegram"></a>
+            <a href="https://vk.com/staslenkevich"><img src="images/vk-1-logo-svgrepo-com.svg" alt="VK"></a>
+        </div>
+        <footer class="info">
+            <p>Контакты</p>
+            <p>
+                Telegram: <a href="https://t.me/StasLen" target="_blank">@StasLen</a><br>
+                VK: <a href="https://vk.com/staslenkevich" target="_blank">Stas Lenkevich</a>
+            </p>
+        </footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorAccent: whitesmoke;
+    /* --colorBgAccent: dodgerblue; */
+    --colorBgAccent: rgba(30, 143, 255, .7);
+    --colorBgAccent2: rgba(102, 65, 45, .7);
+    --colorShadow: dimgrey;
+    --colorBgLight: tan; 
+    --colorBgLighter: bisque;
+    --widthAside: 180px;
+    --minMainWidth: 600px;
+    --fontName: 'LexingtonC';
+    --fontSite: 'ShantellSans-Medium';
+}
+body{
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-family: var(--fontSite), sans-serif;
+    background: no-repeat top url(../images/oblaka.jpg);
+    background-size: cover;
+    /* background-position: fixed; */
+}
+.button{
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--fontSite), sans-serif;
+    height: 2rem;
+    padding: 0 .5rem;
+}

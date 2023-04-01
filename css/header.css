@@ -1,0 +1,100 @@
+@charset "utf-8";
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5%;
+    color: var(--colorAccent);
+    min-width: calc(2 * var(--widthAside) + var(--minMainWidth));
+}
+.main-header>*{
+    background-color: var(--colorBgAccent);
+    text-shadow: 0 0 4px black;
+}
+.main-header>div{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    min-width: var(--widthAside);
+    padding: 1rem;
+}
+.info a{
+    text-decoration: none;
+    color: var(--colorAccent);
+}
+.info a:hover{
+    color: yellow;
+}
+.site-name-field{
+    width: 40%;
+}
+.main-header__name{
+    font-family: var(--fontName), Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.main-header__search-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.main-header__search-site button{
+    border: none;
+    background-color: #0000;
+}
+.search-site{
+    font-family: var(--fontSite), sans-serif;
+    width: 70%;
+    height: 2rem;
+}
+.search-icon{
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+.main-header__reg-buttons{
+    width: 30%;
+    min-width: var(--widthAside);
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    column-gap: 2rem;
+    padding: 1rem;
+}
+.main-header__categories{
+    float: right;
+    padding: 0 var(--widthAside);
+    width: 100%;
+    background-color: var(--colorBgAccent2);
+}
+.categories{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    padding: 1rem 0;
+    width: 80%;
+    min-width: var(--minMainWidth);
+    list-style-type: none;
+}
+.categories li{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.categories li:hover{
+    color: yellow;
+}
