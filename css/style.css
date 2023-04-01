@@ -4,8 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(41, 148, 99, .75) #444;
+}
+
+/* Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: .8rem;
+    height: auto;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--colorBgLighter);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--colorBgLight);
+    border-radius: 4px;
+    border: 1px solid var(--colorAccent);
+}
+  
 :root{
     --colorAccent: whitesmoke;
+    --colorAccent2: yellow;
     /* --colorBgAccent: dodgerblue; */
     --colorBgAccent: rgba(30, 143, 255, .7);
     --colorBgAccent2: rgba(102, 65, 45, .7);
@@ -27,7 +49,6 @@ body{
     font-family: var(--fontSite), sans-serif;
     background: no-repeat top url(../images/oblaka.jpg);
     background-size: cover;
-    /* background-position: fixed; */
 }
 .button{
     cursor: pointer;
@@ -35,4 +56,12 @@ body{
     font-family: var(--fontSite), sans-serif;
     height: 2rem;
     padding: 0 .5rem;
+    border-radius: 3px;
+    border:none;
+    color: var(--colorAccent);
+    text-shadow: 0 0 3px var(--colorShadow);
+    background: var(--colorBgLight);
+}
+.button:hover{
+    color: var(--colorAccent2);
 }
